@@ -46,5 +46,4 @@ render(
   document.body,
 );
 
-
 registerServiceWorker();

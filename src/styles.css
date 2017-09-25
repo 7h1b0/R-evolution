@@ -1,21 +1,22 @@
 * {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	border: 0;
-	font-family: sans-serif;
-	font-weight: 300;
-	font-style: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: 0;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: normal;
   box-sizing: border-box;
 }
 
-body, html {
-	width: 100%;
+body,
+html {
+  width: 100%;
 }
 
 body {
   font-size: 62.5%;
-  background: #1F2428;
+  background: #1f2428;
   color: white;
   letter-spacing: 0.05rem;
   margin-bottom: 2rem;
@@ -26,17 +27,20 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
-h2, label {
+h2,
+label {
   margin-bottom: 1rem;
-  color: #0091A5;
+  color: #0091a5;
   text-transform: uppercase;
 }
 
-h2, .category {
+h2,
+.category {
   padding: 1rem 1rem 0;
 }
 
-h3, h2 {
+h3,
+h2 {
   font-size: 1.1rem;
 }
 
@@ -54,8 +58,9 @@ p {
   margin: 0 auto;
 }
 
-.card, header {
-  background: #282F34;
+.card,
+header {
+  background: #282f34;
 }
 
 header {
@@ -69,23 +74,24 @@ header ul {
   margin: 1rem 0 0;
 }
 
-header li a{
+header li a {
   padding: 9px 0;
   margin: 0 2rem 0 0;
   cursor: pointer;
   color: white;
   position: relative;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-header li a:hover:after, .activeNav:after {
+header li a:hover:after,
+.activeNav:after {
   content: '';
   position: absolute;
   bottom: 0px;
   left: 0;
   width: 100%;
   height: 2px;
-  background: #0091A5;
+  background: #0091a5;
 }
 
 .grid > div {
@@ -94,12 +100,16 @@ header li a:hover:after, .activeNav:after {
 }
 
 .category {
-  margin : 1rem 0;
+  margin: 1rem 0;
 }
 
-.caption, h3, .menu, button, .label p {
-  font-size: .7rem;
-  color: #656B6E;
+.caption,
+h3,
+.menu,
+button,
+.label p {
+  font-size: 0.7rem;
+  color: #656b6e;
   text-transform: uppercase;
 }
 
@@ -118,15 +128,14 @@ svg {
 }
 
 rect {
-  fill: #0091A5;
-  stroke: #0091A5;
+  fill: #0091a5;
+  stroke: #0091a5;
 }
 
 .tooltip {
   display: block;
   background: #fff;
   border-radius: 5px;
-
 }
 
 rect:hover {
@@ -134,8 +143,8 @@ rect:hover {
 }
 
 .efficiency {
-  font-size: .8rem;
-  margin-left: .5rem;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 .login {
@@ -148,28 +157,29 @@ label {
   margin: 1rem 0;
 }
 
-input, button {
+input,
+button {
   display: block;
   padding: 5px 10px;
-  margin: .3rem 0;
+  margin: 0.3rem 0;
   width: 100%;
   border-radius: 4px;
 }
 
 button {
-  background: #0091A5;
+  background: #0091a5;
   cursor: pointer;
   color: white;
 }
 
 .progress {
-  background: #282F34;
+  background: #282f34;
   width: 100%;
   position: relative;
 }
 
 .progress {
-  border-top: .2rem solid #1F2428;
+  border-top: 0.2rem solid #1f2428;
 }
 
 .label {
@@ -187,13 +197,14 @@ button {
   color: white;
 }
 
-.progress-bar, .progress-bar-second {
+.progress-bar,
+.progress-bar-second {
   z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
   height: 30px;
-  background: #0091A5;
+  background: #0091a5;
 }
 
 .progress-bar-second {
@@ -208,9 +219,11 @@ button {
 }
 
 @keyframes a {
-  to {transform: rotate(180deg);}
+  to {
+    transform: rotate(180deg);
+  }
 }
- 
+
 .loader:before {
   content: '';
   box-sizing: border-box;
@@ -223,5 +236,5 @@ button {
   border: 3px solid transparent;
   border-top-color: #fff;
   border-bottom-color: #fff;
-  animation: a .8s ease infinite;
+  animation: a 0.8s ease infinite;
 }

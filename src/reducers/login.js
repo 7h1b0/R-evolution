@@ -35,7 +35,7 @@ export function loginHasErrored(state = false, action) {
   }
 }
 
-export function token(state = '', action,) {
+export function token(state = '', action) {
   switch (action.type) {
     case TOKEN:
       return action.data;

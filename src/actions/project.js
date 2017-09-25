@@ -50,7 +50,7 @@ export function fetchProjets(token) {
               secondValue: Item.realCost,
               formatedSecondValue: `Cost: ${beautifulNumber(Item.realCost)}`,
               value: Item.totalBudget,
-              formatedValue: `Budget: ${beautifulNumber(Item.totalBudget)}`
+              formatedValue: `Budget: ${beautifulNumber(Item.totalBudget)}`,
             })),
           ),
         );
