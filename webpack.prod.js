@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: ['./src', './src/styles.css'],
@@ -54,6 +55,7 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production'),
       },
     }),
+    new CopyWebpackPlugin([{ from: 'assets' }]),
   ],
   bail: true,
   node: false,

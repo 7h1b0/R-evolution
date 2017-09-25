@@ -10,6 +10,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-react-jsx": "^6.23.0",
     "babel-preset-env": "^1.6.0",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.7",
     "eslint": "3.19",
     "eslint-config-airbnb": "^15.1.0",

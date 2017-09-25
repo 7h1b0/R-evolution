@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Login from './components/Login';
 import configureStore from './stores/store';
 import { Router } from './components/Router.js';
+import registerServiceWorker from './registerServiceWorker';
 
 const store = configureStore();
 const routes = [
@@ -44,3 +45,6 @@ render(
   </Provider>,
   document.body,
 );
+
+
+registerServiceWorker();
