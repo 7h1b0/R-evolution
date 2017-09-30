@@ -36,25 +36,26 @@ class Login extends Component {
 
     return (
       <form class="login" onSubmit={this.handleSubmit}>
-        <h1>Login</h1>
-        <Input
-          title="email"
-          type="text"
-          name="email"
-          value={email}
-          onChange={this.handleChange}
-          autofocus
-        />
+        <div class="form-container">
+          <Input
+            title="email"
+            type="text"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+            autofocus
+          />
 
-        <Input
-          title="password"
-          type="password"
-          name="password"
-          value={password}
-          onChange={this.handleChange}
-        />
+          <Input
+            title="password"
+            type="password"
+            name="password"
+            value={password}
+            onChange={this.handleChange}
+          />
 
-        <button type="submit">Login</button>
+          <button type="submit">Login</button>
+        </div>
         {hasErrored && <p class="error">ERROR</p>}
       </form>
     );

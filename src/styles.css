@@ -19,7 +19,6 @@ body {
   background: #1f2428;
   color: white;
   letter-spacing: 0.05rem;
-  margin-bottom: 2rem;
 }
 
 h1 {
@@ -160,8 +159,8 @@ label {
 input,
 button {
   display: block;
-  padding: 5px 10px;
-  margin: 0.3rem 0;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
   width: 100%;
   border-radius: 4px;
 }
@@ -237,4 +236,14 @@ button {
   border-top-color: #fff;
   border-bottom-color: #fff;
   animation: a 0.8s ease infinite;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  flex: 1;
 }
