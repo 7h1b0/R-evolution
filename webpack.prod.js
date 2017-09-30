@@ -20,7 +20,7 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: [
-            ["env", { forceAllTransforms: true }],
+            ['env', { forceAllTransforms: true }],
           ],
           plugins: [
             ['transform-react-jsx', { pragma: 'h' }],
@@ -42,7 +42,6 @@ module.exports = {
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({ template: 'src/index.html', inlineSource: '.css$' }),
     new HtmlWebpackInlineSourcePlugin(),
-    new HtmlWebpackInlineSourcePlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false,
@@ -53,7 +52,7 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production'),
+        NODE_ENV: JSON.stringify('production'),
       },
     }),
     new CopyWebpackPlugin([{ from: 'assets' }]),

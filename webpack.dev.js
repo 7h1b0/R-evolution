@@ -18,7 +18,7 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           presets: [
-            ["env", {
+            ['env', {
               targets: {
                 chrome: 60,
                 firefox: 55,
