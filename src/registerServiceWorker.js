@@ -1,5 +1,5 @@
 export default function register() {
-  if ('serviceWorker' in navigator) {
+  if (process.env.NODE_ENV !== 'production' && 'serviceWorker' in navigator) {
     window.addEventListener('load', () => registerValidSW('service-worker.js'));
   }
 }
