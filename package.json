@@ -32,6 +32,8 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags",
     "build": "webpack --config webpack.prod.js --progress",
     "start": "webpack-dev-server --config webpack.dev.js --progress --hot --inline --open",
     "precommit": "lint-staged"
