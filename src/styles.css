@@ -112,6 +112,10 @@ button,
   text-transform: uppercase;
 }
 
+text {
+  fill: #656b6e;
+}
+
 .grid {
   display: flex;
   margin: 0 0 1rem -1rem;

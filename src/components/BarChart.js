@@ -44,7 +44,7 @@ export default class BarChart extends Component {
               const y = i * distanceBetweenLines - 0.5;
               return (
                 <g key={i}>
-                  <text x={5} y={y - 10}>
+                  <text x={5} y={y - 10} stroke="none">
                     {legend}
                   </text>
                   <line
