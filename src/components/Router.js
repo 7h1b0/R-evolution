@@ -50,6 +50,7 @@ export class Router extends Component {
 }
 
 export class NavLink extends Component {
+  state = { isActive: false };
   componentDidMount() {
     this.handleHistory(history.location);
     this.unlisten = history.listen(this.handleHistory);
