@@ -17,8 +17,8 @@ export default ({ metrics, highlight = '' }) => {
     <div>
       {metrics
         .sort(sort)
-        .map(({ label, value, formatedValue, userId }, index) => {
-          const width = value * 100 / max;
+        .map(({ label, value = 0, formatedValue, userId }, index) => {
+          const width = isNaN(value) ? 0 : value * 100 / max;
           const background = userId === highlight ? 'red' : '';
           return (
             <div class="progress" key={index}>

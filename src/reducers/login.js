@@ -35,7 +35,10 @@ export function loginHasErrored(state = false, action) {
   }
 }
 
-export function token(state = '', action) {
+export function token(
+  state = 'FDBtqt1+aQ+mwcDO99nshGWJfGxZtJ+eNbt1SDXw2IvNhF2KbfK70L8e/fpQScMCnCt7NdepTs4bjsR1ssdghw==',
+  action,
+) {
   switch (action.type) {
     case TOKEN:
       return action.data;

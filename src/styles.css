@@ -93,11 +93,6 @@ header li a:hover:after,
   background: #0091a5;
 }
 
-.grid > div {
-  margin: 1rem 0 0 1rem;
-  flex: 1;
-}
-
 .category {
   margin: 1rem 0;
 }
@@ -119,6 +114,12 @@ text {
 .grid {
   display: flex;
   margin: 0 0 1rem -1rem;
+  flex-direction: row;
+}
+
+.grid > div {
+  margin: 1rem 0 0 1rem;
+  flex: 1;
 }
 
 .chart-container {
@@ -250,4 +251,19 @@ form {
 
 .form-container {
   flex: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .grid {
+    margin: 0 0 1rem;
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .grid > div {
+    margin: 1rem 0 0;
+  }
 }

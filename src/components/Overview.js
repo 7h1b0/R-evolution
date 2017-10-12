@@ -39,11 +39,15 @@ class Overview extends Component {
         <h3>Average by day</h3>
         <Card title="Daily">
           <BarChart
-            width={1000}
             height={200}
-            metrics={metrics}
-            legends={[20, 16, 12, 8, 4, 0]}
-            highlight={8}
+            scaleX={70}
+            datasets={[
+              {
+                label: 'Daily',
+                color: 'red',
+                data: metrics,
+              },
+            ]}
           />
         </Card>
         <div class="grid">
@@ -71,11 +75,15 @@ class Overview extends Component {
         </div>
         <Card title="Efficiency">
           <BarChart
-            width={1000}
             height={200}
-            metrics={efficiency}
-            legends={[260, 220, 180, 140, 100, 60]}
-            highlight={100}
+            scaleX={70}
+            datasets={[
+              {
+                label: 'Daily',
+                color: 'red',
+                data: efficiency,
+              },
+            ]}
           />
         </Card>
       </div>

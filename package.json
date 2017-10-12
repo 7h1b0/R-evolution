@@ -24,6 +24,7 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
+    "debounce": "^1.0.2",
     "history": "^4.7.2",
     "path-to-regexp": "^2.0.0",
     "preact": "^8.2.5",
