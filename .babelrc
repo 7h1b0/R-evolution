@@ -1,0 +1,67 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "chrome": 60,
+              "firefox": 55
+            }
+          }
+        ]
+      ],
+      "plugins": [
+        [
+          "transform-react-jsx",
+          {
+            "pragma": "h"
+          }
+        ],
+        "transform-class-properties"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "env",
+          {
+            "forceAllTransforms": true
+          }
+        ]
+      ],
+      "plugins": [
+        [
+          "transform-react-jsx",
+          {
+            "pragma": "h"
+          }
+        ],
+        "transform-class-properties"
+      ]
+    },
+    "testing": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ],
+      "plugins": [
+        [
+          "transform-react-jsx",
+          {
+            "pragma": "h"
+          }
+        ],
+        "transform-class-properties",
+        "dynamic-import-node"
+      ]
+    }
+  }
+}

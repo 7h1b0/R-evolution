@@ -18,15 +18,6 @@ module.exports = {
         test: /\.js/i,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-          presets: [
-            ['env', { forceAllTransforms: true }],
-          ],
-          plugins: [
-            ['transform-react-jsx', { pragma: 'h' }],
-            'transform-class-properties',
-          ],
-        },
       },
       {
         test: /\.css$/,

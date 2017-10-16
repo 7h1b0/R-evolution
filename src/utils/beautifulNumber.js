@@ -1,5 +1,5 @@
 export default (number, sepator = ' ') => {
-  if (!number || number === 0) {
+  if (!number || number === 0 || isNaN(number)) {
     return '';
   }
   const roundNumber = Math.round(number * 100) / 100;

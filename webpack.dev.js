@@ -16,20 +16,6 @@ module.exports = {
         test: /\.js/i,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        options: {
-          presets: [
-            ['env', {
-              targets: {
-                chrome: 60,
-                firefox: 55,
-              },
-            }],
-          ],
-          plugins: [
-            ['transform-react-jsx', { pragma: 'h' }],
-            'transform-class-properties',
-          ],
-        },
       },
       {
         test: /\.css$/,
@@ -47,7 +33,7 @@ module.exports = {
   ],
   devtool: 'source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'src'),
+    contentBase: path.join(__dirname, ''),
     compress: true,
     historyApiFallback: true,
   },
